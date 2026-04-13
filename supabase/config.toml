@@ -1,0 +1,10 @@
+project_id = "kifeiibiobebasbkgeds"
+
+[functions.mpesa-stk-push]
+verify_jwt = true
+
+[functions.mpesa-callback]
+verify_jwt = false
+
+[functions.send-invoice]
+verify_jwt = true
