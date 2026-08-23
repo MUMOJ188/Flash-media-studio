@@ -1,77 +1,89 @@
-<<<<<<< HEAD
-# Welcome to your Lovable project
+# Flash Media Studio
 
-## Project info
+## Client Job Management System
 
-**URL**: https://lovable.dev/projects/6fbb4b00-5b95-472f-bdd6-15aa8596d326
+Flash Media Studio is a full-stack client job management system designed to digitize and streamline the management of media studio operations. The system provides a centralized platform for managing clients, projects, job assignments, payments, and workflow progress.
 
-## How can I edit this code?
+## Overview
 
-There are several ways of editing your application.
+The system allows a media studio to manage the complete lifecycle of a client job, from client registration and project creation to job tracking and completion.
 
-**Use Lovable**
+It replaces manual record keeping with a structured web-based system backed by a relational database.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/6fbb4b00-5b95-472f-bdd6-15aa8596d326) and start prompting.
+## Key Features
 
-Changes made via Lovable will be committed automatically to this repo.
+### Client Management
+- Register and manage client information
+- View client profiles and contact details
+- Maintain client records in a centralized database
+- Track client-related projects
 
-**Use your preferred IDE**
+### Job & Project Management
+- Create and manage client projects
+- Assign jobs and track their progress
+- Monitor project status throughout the workflow
+- Maintain project-related information
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Dashboard
+- Centralized dashboard for monitoring studio operations
+- Overview of clients and active projects
+- Quick access to important system functions
+- Organized presentation of operational data
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Authentication & Security
+- User authentication
+- Protected application routes
+- Role-based access where applicable
+- Secure database communication
+- Environment variables used for sensitive configuration
 
-Follow these steps:
+### Database Management
+- Relational PostgreSQL database
+- Structured tables and relationships
+- Persistent storage of client and project data
+- Database queries for retrieving and updating records
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Technologies Used
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
+### Frontend
 - React
-- shadcn-ui
+- TypeScript
+- Vite
 - Tailwind CSS
+- shadcn/ui
 
-## How can I deploy this project?
+### Backend & Database
+- Supabase
+- PostgreSQL
+- Supabase Authentication
 
-Simply open [Lovable](https://lovable.dev/projects/6fbb4b00-5b95-472f-bdd6-15aa8596d326) and click on Share -> Publish.
+### Development Tools
+- Git
+- GitHub
+- npm
+- Visual Studio Code
 
-## Can I connect a custom domain to my Lovable project?
+## System Architecture
 
-Yes, you can!
+The application follows a modern client-server architecture:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
-=======
-# Flash-media-studio
->>>>>>> 580c57b97bcd80361291d0d9991339efe4e0b144
+```text
+User
+ │
+ ▼
+React + TypeScript Frontend
+ │
+ ├── UI Components
+ ├── Forms & Validation
+ ├── Application Logic
+ └── Authentication
+ │
+ ▼
+Supabase
+ │
+ ├── Authentication
+ ├── PostgreSQL Database
+ └── Database API
+ │
+ ▼
+Persistent Application Data
